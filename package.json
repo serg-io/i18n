@@ -1,0 +1,48 @@
+{
+  "name": "i18n-tag",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "Sergio Alcantara <iserg9@gmail.com> (https://github.com/serg-io)",
+  "homepage": "https://github.com/serg-io/i18n-tag#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serg-io/i18n-tag.git"
+  },
+  "keywords": [
+    "i18n",
+    "l10n",
+    "internationalization",
+    "localization",
+    "translations",
+    "template literals"
+  ],
+  "bugs": {
+    "url": "https://github.com/serg-io/i18n-tag/issues"
+  },
+  "main": "src/i18n.js",
+  "files": [
+    "/lib",
+    "/src"
+  ],
+  "scripts": {
+    "lint": "eslint src/*",
+    "postversion": "git push && git push --tags && npm publish",
+    "prepare": "rm -rf lib && npm run transpile",
+    "preversion": "npm run lint && npm run test",
+    "test": "jest",
+    "transpile": "babel src --out-dir lib --ignore *.test.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0"
+  }
+}
