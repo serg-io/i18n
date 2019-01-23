@@ -1,7 +1,7 @@
 {
   "name": "i18n-tag",
   "version": "0.0.1",
-  "description": "",
+  "description": "Internationalization using tagged template literals.",
   "license": "MIT",
   "author": "Sergio Alcantara <iserg9@gmail.com> (https://github.com/serg-io)",
   "homepage": "https://github.com/serg-io/i18n-tag#readme",
