@@ -3,6 +3,13 @@ import i18n, { dictionary, load } from './i18n.js';
 const DEFINITIONS = {
 	submit: 'Submit',
 	total: (total, defaultTotal = '') => `Total: $${ total || defaultTotal }`,
+	user: {
+		email: 'email',
+		name: {
+			first: 'First name',
+			last: 'Last name',
+		},
+	},
 };
 
 describe('dictionary', () => {
@@ -24,12 +31,16 @@ describe('load', () => {
 
 
 describe('i18n', () => {
-	beforeEach(() => {
+	beforeAll(() => {
 		load(DEFINITIONS);
 	});
 
 	it('should return a text definition when used as a tag with template literals', () => {
 		expect(i18n`submit`).toBe('Submit');
+	});
+
+	it('should support nested definitions', () => {
+		expect(i18n`user.name.first`).toBe('First name');
 	});
 
 	describe('when used with text definitions that are functions', () => {
@@ -50,7 +61,7 @@ describe('i18n', () => {
 		expect(() => i18n`foo`).toThrow();
 	});
 
-	afterEach(() => {
+	afterAll(() => {
 		Object.keys(dictionary).forEach(key => delete dictionary[key]);
 	});
 });

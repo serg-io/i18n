@@ -26,12 +26,17 @@
     "/src"
   ],
   "scripts": {
-    "lint": "eslint src/*",
+    "docs": "npm-run-all docs-*",
+    "docs-css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 docs/style.scss docs/dist/style.css",
+    "docs-css-minify": "cleancss --source-map --source-map-inline-sources --output docs/dist/style.min.css docs/dist/style.css",
+    "docs-html": "pandoc -s --quiet -f markdown-smart -t html5 --toc --highlight-style=kate --template=docs/template.html --css=docs/dist/style.min.css --metadata-file=package.json -o index.html README.md",
+    "lint": "eslint src/*.js",
     "postversion": "git push && git push --tags && npm publish",
     "prepare": "rm -rf lib && npm run transpile",
-    "preversion": "npm run lint && npm run test",
+    "preversion": "npm-run-all lint test",
     "test": "jest",
-    "transpile": "babel src --out-dir lib --ignore *.test.js"
+    "transpile": "babel src --out-dir lib --ignore *.test.js",
+    "version": "npm run docs && git add index.html docs/dist/"
   },
   "jest": {
     "testEnvironment": "node"
@@ -40,9 +45,13 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.3.1",
+    "clean-css-cli": "^4.2.1",
     "eslint": "^5.14.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "jest": "^24.1.0"
+    "jest": "^24.1.0",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
   }
 }
