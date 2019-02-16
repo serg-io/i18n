@@ -10,7 +10,7 @@
 	
 			<meta name="keywords" content="i18n, l10n, internationalization, localization, translations, template literals" />
 	
-	<title>i18ntag - Internationalization using tagged template literals.</title>
+	<title>@serg.io/i18n - Internationalization using tagged template literals.</title>
 
 			<link rel="stylesheet" href="docs/dist/style.min.css" />
 	
@@ -90,7 +90,7 @@ code span.wa { color: #bf0303; } /* Warning */
 		</button>
 		<div class="side-nav" onclick="this.classList.remove('visible')">
 			<nav>
-				<h3>i18ntag</h3>
+				<h3>@serg.io/i18n</h3>
 				<ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#installation">Installation</a></li>
@@ -100,15 +100,15 @@ code span.wa { color: #bf0303; } /* Warning */
 				<table>
 					<tr>
 						<td>
-							<a href="https://github.com/serg-io/i18ntag" title="GitHub Repository" onclick="event.stopPropagation()">
+							<a href="https://github.com/serg-io/i18n" title="GitHub Repository" onclick="event.stopPropagation()">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
 									<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
 								</svg>
 							</a>
 						</td>
-						<td>Version 0.1.0</td>
+						<td>Version 0.0.1</td>
 						<td>
-							<a href="https://www.npmjs.com/package/i18ntag" target="_blank" title="NPM Package" onclick="event.stopPropagation()">
+							<a href="https://www.npmjs.com/package/@serg.io/i18n" target="_blank" title="NPM Package" onclick="event.stopPropagation()">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 									<path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/>
 								</svg>
@@ -121,13 +121,13 @@ code span.wa { color: #bf0303; } /* Warning */
 	
 	<article class="container">
 		<header id="title-block-header">
-			<h1 class="display-4">i18ntag</h1>
+			<h1 class="display-4">@serg.io/i18n</h1>
 			<p class="lead">Internationalization using tagged template literals.</p>
 					</header>
 
 		<section>
 <h2 id="introduction">Introduction</h2>
-<p>The <em>i18ntag</em> library allows you to use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates">tagged template literals</a> in your source code to generate content for different languages. This library provides the following functions:</p>
+<p>This library allows you to use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates">tagged template literals</a> in your source code to generate content for different languages. This library provides the following functions:</p>
 <ul>
 <li><strong><code>load</code></strong>: This function can be used to load definitions.</li>
 <li><strong><code>i18n</code></strong>: Template literals can be tagged with <code>i18n</code> to retrieve definitions that have been previously loaded using the <code>load</code> function.</li>
@@ -135,12 +135,12 @@ code span.wa { color: #bf0303; } /* Warning */
 </section>
 <section>
 <h2 id="installation">Installation</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">npm</span> install i18ntag</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">npm</span> install @serg.io/i18n</a></code></pre></div>
 </section>
 <section>
 <h2 id="example">Example</h2>
 <p>You must first load the text definitions:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="im">import</span> i18n<span class="op">,</span> <span class="op">{</span> load <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;path/to/i18ntag/src/i18n.js&#39;</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="im">import</span> i18n<span class="op">,</span> <span class="op">{</span> load <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;path/to/src/i18n.js&#39;</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb2-2" title="2"></a>
 <a class="sourceLine" id="cb2-3" title="3"><span class="co">// Load text definitions.</span></a>
 <a class="sourceLine" id="cb2-4" title="4"><span class="at">load</span>(<span class="op">{</span></a>
@@ -151,7 +151,7 @@ code span.wa { color: #bf0303; } /* Warning */
 <a class="sourceLine" id="cb2-9" title="9">    <span class="dt">submit</span><span class="op">:</span> <span class="st">&#39;Submit&#39;</span><span class="op">,</span></a>
 <a class="sourceLine" id="cb2-10" title="10"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
 <p>Once your text definitions have been loaded, you can tag template literals using <code>i18n</code>. For instance, the following example will change the <code>innerText</code> of the <code>button</code> with the string "Submit":</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="im">import</span> i18n<span class="op">,</span> <span class="op">{</span> load <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;path/to/i18ntag/src/i18n.js&#39;</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="im">import</span> i18n<span class="op">,</span> <span class="op">{</span> load <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;path/to/src/i18n.js&#39;</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb3-2" title="2"></a>
 <a class="sourceLine" id="cb3-3" title="3"><span class="co">// Find the submit button.</span></a>
 <a class="sourceLine" id="cb3-4" title="4"><span class="kw">const</span> button <span class="op">=</span> <span class="va">document</span>.<span class="at">querySelector</span>(<span class="st">&#39;button[type=&quot;submit&quot;]&#39;</span>)<span class="op">;</span></a>
@@ -161,7 +161,7 @@ code span.wa { color: #bf0303; } /* Warning */
 </section>
 <section>
 <h2 id="license">License</h2>
-<p><a href="https://github.com/serg-io/i18ntag/blob/master/LICENSE">MIT</a>.</p>
+<p><a href="https://github.com/serg-io/i18n/blob/master/LICENSE">MIT</a>.</p>
 </section>
 	</article>
 

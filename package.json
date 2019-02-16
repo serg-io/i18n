@@ -1,13 +1,13 @@
 {
-  "name": "i18ntag",
-  "version": "0.1.0",
+  "name": "@serg.io/i18n",
+  "version": "0.0.1",
   "description": "Internationalization using tagged template literals.",
   "license": "MIT",
   "author": "Sergio Alcantara (https://github.com/serg-io)",
-  "homepage": "https://github.com/serg-io/i18ntag#readme",
+  "homepage": "https://github.com/serg-io/i18n#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serg-io/i18ntag.git"
+    "url": "git+https://github.com/serg-io/i18n.git"
   },
   "keywords": [
     "i18n",
@@ -18,7 +18,7 @@
     "template literals"
   ],
   "bugs": {
-    "url": "https://github.com/serg-io/i18ntag/issues"
+    "url": "https://github.com/serg-io/i18n/issues"
   },
   "main": "src/i18n.js",
   "files": [
@@ -31,7 +31,7 @@
     "docs-css-minify": "cleancss --source-map --source-map-inline-sources --output docs/dist/style.min.css docs/dist/style.css",
     "docs-html": "pandoc -s --quiet -f markdown-smart -t html5 --toc --highlight-style=kate --template=docs/template.html --css=docs/dist/style.min.css --metadata-file=package.json -o index.html README.md",
     "lint": "eslint src/*.js",
-    "postversion": "git push && git push --tags && npm publish",
+    "postversion": "git push && git push --tags && npm publish --access=public",
     "prepare": "rm -rf lib && npm run transpile",
     "preversion": "npm-run-all lint test",
     "test": "jest",
