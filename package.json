@@ -1,13 +1,13 @@
 {
-  "name": "i18n-tag",
+  "name": "i18ntag",
   "version": "0.1.0",
   "description": "Internationalization using tagged template literals.",
   "license": "MIT",
   "author": "Sergio Alcantara (https://github.com/serg-io)",
-  "homepage": "https://github.com/serg-io/i18n-tag#readme",
+  "homepage": "https://github.com/serg-io/i18ntag#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serg-io/i18n-tag.git"
+    "url": "git+https://github.com/serg-io/i18ntag.git"
   },
   "keywords": [
     "i18n",
@@ -18,7 +18,7 @@
     "template literals"
   ],
   "bugs": {
-    "url": "https://github.com/serg-io/i18n-tag/issues"
+    "url": "https://github.com/serg-io/i18ntag/issues"
   },
   "main": "src/i18n.js",
   "files": [

@@ -2,7 +2,7 @@
 
 ## Introduction ##
 
-The _i18n-tag_ library allows you to use [tagged template literals](
+The _i18ntag_ library allows you to use [tagged template literals](
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates)
 in your source code to generate content for different languages. This library provides the following
 functions:
@@ -17,7 +17,7 @@ functions:
 ## Installation ##
 
 ```bash
-npm install i18n-tag
+npm install i18ntag
 ```
 
 </section>
@@ -28,7 +28,7 @@ npm install i18n-tag
 You must first load the text definitions:
 
 ```javascript
-import i18n, { load } from 'path/to/i18n-tag/src/i18n.js';
+import i18n, { load } from 'path/to/i18ntag/src/i18n.js';
 
 // Load text definitions.
 load({
@@ -45,7 +45,7 @@ instance, the following example will change the `innerText` of the `button` with
 "Submit":
 
 ```javascript
-import i18n, { load } from 'path/to/i18n-tag/src/i18n.js';
+import i18n, { load } from 'path/to/i18ntag/src/i18n.js';
 
 // Find the submit button.
 const button = document.querySelector('button[type="submit"]');
@@ -59,6 +59,6 @@ button.innerText = i18n`submit`;
 
 ## License ##
 
-[MIT](https://github.com/serg-io/i18n-tag/blob/master/LICENSE).
+[MIT](https://github.com/serg-io/i18ntag/blob/master/LICENSE).
 
 </section>
