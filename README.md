@@ -48,7 +48,7 @@ instance, the following example will change the `innerText` of the `button` with
 import i18n, { load } from 'path/to/i18n-tag/src/i18n.js';
 
 // Find the submit button.
-const button = document.querySelector('button[type="submit']');
+const button = document.querySelector('button[type="submit"]');
 
 // Change its text using i18n.
 button.innerText = i18n`submit`;
