@@ -4,7 +4,7 @@
   "description": "Internationalization using tagged template literals.",
   "license": "MIT",
   "author": "Sergio Alcantara (https://github.com/serg-io)",
-  "homepage": "https://github.com/serg-io/i18n#readme",
+  "homepage": "https://serg-io.github.io/i18n/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/serg-io/i18n.git"
