@@ -1,6 +1,6 @@
 {
   "name": "@serg.io/i18n",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Internationalization using tagged template literals.",
   "license": "MIT",
   "author": "Sergio Alcantara (https://github.com/serg-io)",
